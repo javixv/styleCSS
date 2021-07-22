@@ -1,0 +1,27 @@
+.btn-basic {
+    border-radius: 30px;
+    background: #3498db;
+    color: #fff;
+    width: 60px;
+    height: 25px;
+}
+
+.btn-basic :hover {
+    background: #3c8abe;
+}
+  
+  .btn-basic:active {
+    background: #2980b9;
+    top: 2px;
+  }
+  
+  .btn-basic:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
+
