@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blink</title>
+</head>
+<body>
+    <style type="text/css">
+.text {
+  font-size:28px;
+  font-family:helvetica;
+  font-weight:bold;
+  color:#d90b0b;
+  text-transform:uppercase;
+  /* background-color: yellow; */
+}
+.parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  
+}
+
+.parpadea2 {
+  
+  animation-name: parpadeo2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo2;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+
+  box-shadow: 0px 0px 20px 0px rgba(255,13,13,1);
+-webkit-box-shadow: 0px 0px 20px 0px rgba(255,13,13,1);
+-moz-box-shadow: 0px 0px 20px 0px rgba(255,13,13,1);
+  
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+/* ------------- */
+@-moz-keyframes parpadeo2{  
+  0% { opacity: 2.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo2 {  
+  0% { opacity: 2.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo2 {  
+  0% { opacity: 2.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+        </style>
+        <div style="background-color: yellow;">
+            <span class="parpadea text"><strong>Este texto parpadea</strong>
+        </div>
+       
+        <div class="parpadea2" style="width: 150px; height: 100px; border: 1px solid #d0d0d0;">
+            <div style="background-color: yellow;">
+                <span class="text"><strong>Javier</strong>
+            </div>
+        </div>
+</body>
+</html>
